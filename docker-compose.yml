@@ -1,7 +1,7 @@
 version: '2'
 services:
   mongodb:
-    image: "mongo"
+    image: "mongo:3.2"
     ports:
      - "27017:27017"
   backend:
@@ -16,7 +16,7 @@ services:
   frontend:
     build: ./react-frontend/
     ports:
-      - "3000:3000"
+      - "80:3000"
     volumes:
       - ./react-frontend:/usr/src/frontend/app
       - "/usr/src/frontend/app/node_modules"
