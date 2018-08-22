@@ -1,0 +1,25 @@
+version: '2'
+services:
+  mongodb:
+    image: "mongo"
+    ports:
+     - "27017:27017"
+  backend:
+    build: ./backend/
+    ports:
+      - "6200:6200"
+    volumes:
+      - ./backend:/usr/src/backend/app
+      - "/usr/src/backend/app/node_modules"
+    depends_on:
+      - mongodb
+  frontend:
+    build: ./react-frontend/
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react-frontend:/usr/src/frontend/app
+      - "/usr/src/frontend/app/node_modules"
+    depends_on:
+      - backend
+
