@@ -37,9 +37,9 @@ This architecture illustrates what the web app will look like in Oracle Cloud In
  ## Step 1 Forking
  1. Go to [https://github.com/schmidtp0740/react-todolist](https://github.com/schmidtp0740/react-todolist)
  ![](./images/pic1.jpg)
- 2. Fork the repo
+ 2. Fork the repo, this will clone this repo under your name. From now on work on the repo under your name
  ![](./images/pic2.jpg)
- 3. Click **Clone or Download**
+ 3. Click **Clone or Download**, to clone the repo under your name
  ![](./images/pic3.jpg)
  4. Copy the url
  ![](./images/pic4.jpg)
@@ -87,7 +87,15 @@ This architecture illustrates what the web app will look like in Oracle Cloud In
  ```
  9. Save the file
  10. You will notice the app will refresh in the browser because we have Hot Reloading in Docker :grin:
- 11. You are now ready to deploy to the cloud!!
+ 11. Commit the change to your github repo
+  - it may ask for your github username and password if this is the first time you are commiting from your laptop
+ ```
+ $ git add .
+ $ git commit -m "fixed bug"
+ $ git push origin master
+ ```
+ 12. The change should now show in your repo! 
+ 13. You are now ready to deploy to the cloud!!
 
  Lets observe what we have just done. You just downloaded code from a repo that needed Nodejs and MongoDB but you never installed them on your local computer! Try and check that you have node and mongodb installed locally, I dare you... Docker allows you to quickly create a container ( aka very small portable virtual machines) that house each tier of the web app. This makes it very easy to run this web app anywhere that has docker installed and with a single command ```docker-compose up```. Now lets see how we can deploy this to the cloud...
 
