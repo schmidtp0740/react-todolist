@@ -46,7 +46,7 @@ This repo contains the code for the backend service that is built using Nodejs a
  ```
  6. Change into the directory
  ```
- $ cd /react-todolist
+ $ cd react-todolist
  ```
 
  ## Run the Web App Locally

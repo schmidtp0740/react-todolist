@@ -9,14 +9,14 @@ var basePath = '/todo';
 var port = 6200;
 
 // Connection to DB
-// mongoose.connect('mongodb://mongodb')
-//     .then(() => {
-//       console.log('Backend Started');
-//     })
-//     .catch(err => {
-//         console.error('Backend error:', err.stack);
-//         process.exit(1);
-//     });
+mongoose.connect('mongodb://mongodb')
+    .then(() => {
+      console.log('Backend Started');
+    })
+    .catch(err => {
+        console.error('Backend error:', err.stack);
+        process.exit(1);
+    });
 
 // Routes and Backend Funcioncalities
 var todoListRoutes = require('./src/routes/todoListRoutes');
