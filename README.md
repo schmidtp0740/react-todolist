@@ -29,20 +29,13 @@ If you using a mac
 ## Abstract
 This repo contains the code for the backend service that is built using Nodejs and the frontend service that uses React. It also contains the necessary files to containerize both apps and a docker compose file that will simply deploy both apps and a MongoDB instance with a single command,  ```docker-compose up```. This is a simple TODO list that has a bug, which once is fixed can be deployed to "Production". You wil be tasked with provisioning the infrastructure to Oracle Cloud Infrastructure and deploying this 3 tier web app. 
 
- ## Architecture
-This architecture illustrates what the web app will look like in Oracle Cloud Infrastructure.
-
-![Architecture](./images/architecture.jpg)
 
  ## Step 1 Forking
  1. Go to [https://github.com/schmidtp0740/react-todolist](https://github.com/schmidtp0740/react-todolist)
- ![](./images/pic1.jpg)
+ 
  2. Fork the repo, this will clone this repo under your name. From now on work on the repo under your name
- ![](./images/pic2.jpg)
  3. Click **Clone or Download**, to clone the repo under your name
- ![](./images/pic3.jpg)
  4. Copy the url
- ![](./images/pic4.jpg)
  5. Clone the repo to your desktop
     - open up your terminal
     - change into the directory that you want to clone the repo in and clone the repo
@@ -103,12 +96,9 @@ This architecture illustrates what the web app will look like in Oracle Cloud In
  To begin, login to the OCI Console page to provision the necessary resources to run our web app.
 
  1. Go the the login page, this will most likely be provided by your hub admin. It should be similar to [https://console.us-ashburn-1.oraclecloud.com](https://console.us-ashburn-1.oraclecloud.com) or [https://console.us-phoenix-1.oraclecloud.com](https://console.us-phoenix-1.oraclecloud.com)
- ![](./images/pic5.jpg)
 
  2. Enter the Tenancy name
- ![](./images/pic6.jpg)
  3. Click **Continue** to go to Oracle's IDCS to enter the username and password
- ![](./images/pic7.jpg)
  
  
 
